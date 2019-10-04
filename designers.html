@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Which Interior Designer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="design.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.wid-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.wid-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="wid-sidebar wid-red wid-collapse wid-top wid-large wid-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="wid_close()" class="wid-button wid-hide-large wid-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="wid-container">
+    <h3 class="wid-padding-64"><b>Which</b></h3>
+  </div>
+  <div class="wid-bar-block">
+    <a href="homepage.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Home</a> 
+    <a href="showcase.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Showcase</a> 
+    <a href="services.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Services</a> 
+    <a href="#" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Designers</a> 
+    <a href="process.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Our Process</a> 
+    <a href="contact.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="wid-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Designers -->
+  <div class="wid-container" id="designers" style="margin-top:75px">
+    <h1 class="wid-xxxlarge wid-text-red"><b>Designers.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="wid-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="wid-row-padding wid-grayscale">
+    <div class="wid-col m4 wid-margin-bottom">
+      <div class="wid-light-grey">
+        <img src="team1.jpg" alt="Jane" style="width:100%">
+        <div class="wid-container">
+          <h3>Jane Doe</h3>
+          <p class="wid-opacity">CEO & Founder</p>
+          <p>Jane Doe is a research-based interior designer. She is known for having massive experience in historical interior architectural and architectural restoration. She has also played an important role in manufacturer of fine contemporary and classical furniture.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wid-col m4 wid-margin-bottom">
+      <div class="wid-light-grey">
+        <img src="team2.jpg" alt="John" style="width:100%">
+        <div class="wid-container">
+          <h3>John Doe</h3>
+          <p class="wid-opacity">Designer</p>
+          <p>John Doe is an excellent Creative Interior Designer with 3+ years of experience building customized solutions for residential and commercial clients. Intuitively coordinates lighting, texture and color to piece together beautiful, functional spaces.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wid-col m4 wid-margin-bottom">
+      <div class="wid-light-grey">
+        <img src="team3.jpg" alt="Mike" style="width:100%">
+        <div class="wid-container">
+          <h3>Mike Ross</h3>
+          <p class="wid-opacity">Architect</p>
+          <p>He is a highly creative AIA registered architect with 9+ years experience. He has designed 25 multi-million dollar jobs for DDJ, at 30% less cost than competitors, with 15% less rework than colleagues. He has received 15 client commendations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function wid_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function wid_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

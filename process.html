@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Which Interior Designer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="design.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.wid-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.wid-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="wid-sidebar wid-red wid-collapse wid-top wid-large wid-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="wid_close()" class="wid-button wid-hide-large wid-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="wid-container">
+    <h3 class="wid-padding-64"><b>Which</b></h3>
+  </div>
+  <div class="wid-bar-block">
+    <a href="homepage.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Home</a> 
+    <a href="showcase.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Showcase</a> 
+    <a href="services.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Services</a> 
+    <a href="designers.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Designers</a> 
+    <a href="#" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Our Process</a> 
+    <a href="contact.html" onclick="wid_close()" class="wid-bar-item wid-button wid-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="wid-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Packages / Pricing Tables -->
+<h1 class="wid-xxxlarge wid-text-red"><b>Why choose us?</b></h1>
+<ol>
+<li><b>Meet & Agree</b></li>
+<p>The first step will be a meeting arranged with our Head – Business Development where he will show you some of our recent projects’ actual photos. We will measure the premises and then, we shall ask you and your family about 100+ questions which will include your family size, budget, requirements, lifestyle, likes and dislikes, taste, and all the possible questions which will help us to conceptualize your dream home. After this, let us finalize and start collaborating with you for your dream home.</p>
+<li><b>Idea & Concept</b></li>
+<p>After finalizing to design with us, we will freeze the floor plan which is the heart of interiors and then prepare a concept with creative ideas based on the information provided by you. Once we are crystal clear with the knowledge, we will start brainstorming for new and unique notions that will help us with our next step, which is Design & Create.</p>
+<li><b>Design & Create</b></li>
+<p>This is one of the major steps before the final phase. We will shower you with ‘n’ number of designs to choose from. Home Makers provide 3D designs also for a better decision making which are so ‘to the point’ that even a 5-year-old can understand them. Once you are satisfied with your wonderful choice of design, we will commence with the next stage.</p>
+<li><b>Execute & Finish</b></li>
+<p>The most crucial and final step is crafting our imagination into reality. Watch as we convert your house into a dream home. Furniture and show pieces add life to certain corners of your house. Elements like curtains, lighting, etc. bring glamour. Luxury is born in the bedroom. Relaxation and peace of mind will be found in the washroom. Comfort and ease is where the kitchen is. Finally, we will hand over to you the peaceful possession of your humble abode, but don’t you worry as we are there with you to take care of your dream home for the rest of your life.</p>
+</ol>
+</div>
+
+<script>
+// Script to open and close sidebar
+function wid_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function wid_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
